@@ -1,0 +1,13 @@
+define KMACHINE alix
+
+define KARCH i386
+
+include ktypes/preempt-rt/preempt-rt.scc
+
+include alix.scc
+
+# default policy for preempt-rt kernels
+include cfg/usb-mass-storage.scc
+include cfg/boot-live.scc
+include features/latencytop/latencytop.scc
+include features/profiling/profiling.scc

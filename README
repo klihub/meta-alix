@@ -1,0 +1,23 @@
+This README file contains information on building the meta-alix
+BSP layer, and booting the images contained in the /binary directory.
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+Patches
+=======
+
+Please submit any patches against this BSP to <kli@iki.fi>.
+
+Please see the meta-alix/MAINTAINERS file for more details.

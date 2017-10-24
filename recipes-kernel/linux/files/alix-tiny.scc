@@ -1,0 +1,7 @@
+define KMACHINE alix
+
+define KARCH i386
+
+include ktypes/tiny/tiny.scc
+
+include alix.scc

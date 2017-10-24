@@ -1,0 +1,9 @@
+define KMACHINE alix
+
+define KARCH i386
+
+include ktypes/standard/standard.scc nopatch
+
+include alix.scc
+
+include cfg/boot-live.scc

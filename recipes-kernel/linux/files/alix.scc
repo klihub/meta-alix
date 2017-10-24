@@ -1,0 +1,6 @@
+kconf hardware alix.cfg
+
+include features/serial/8250.scc
+include features/hostapd/hostapd.scc
+
+include cfg/boot-live.scc
