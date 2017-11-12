@@ -1,0 +1,16 @@
+*** rootfs.orig	2017-11-12 19:49:36.060220012 +0200
+--- rootfs	2017-11-12 19:51:08.157348194 +0200
+***************
+*** 31,36 ****
+--- 31,41 ----
+  				bootparam_root="/dev/disk/by-partuuid/$root_uuid"
+  			fi
+  
++ 			if [ "`echo ${bootparam_root} | cut -c1-6`" = "LABEL=" ]; then
++ 				root_label=`echo $bootparam_root | cut -c7-`
++ 				bootparam_root="/dev/disk/by-label/$root_label"
++ 			fi
++ 
+  			if [ -e "$bootparam_root" ]; then
+  				flags=""
+  				if [ -n "$bootparam_ro" ] && ! echo "$bootparam_rootflags" | grep -w -q "ro"; then
