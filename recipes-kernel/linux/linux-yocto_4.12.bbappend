@@ -3,17 +3,13 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 PR := "${PR}.1"
 
 COMPATIBLE_MACHINE_alix = "alix"
-
-KBRANCH_alix  = "standard/base"
-
-#SRC_URI += " 
-#    file://defconfig 
-#
+KBRANCH_alix = "standard/base"
 
 SRC_URI += " \
     file://defconfig \
 "
 
+# XXX TODO: we still (badly) need to modularize the kernel config.
 #SRC_URI += " :#:
 #    file://alix.scc :#:
 #    file://alix.cfg :#:
